@@ -1,0 +1,33 @@
+{
+  "description": "Enhances user experience while using for iVi - Personalized Dashboard",
+  "manifest_version": 2,
+  "name": "iVi Dashboard",
+  "version": "1.9.4.9",
+  "homepage_url": "http://bit.ly/yai_googleplus",
+  "icons": {
+    "48": "icons/ivi.png",
+    "96": "icons/ivi@2x.png"
+  },
+  "background":{
+    "scripts": ["views/jquery.js", "startup.js"]
+  },
+  "permissions": [
+    "storage"
+  ],
+  "incognito": "spanning",
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "iVi - Personalized your Dashboard",
+    "default_popup": "views/menu.html",
+    "default_icon": {
+      "19": "icons/ivi.png",
+      "38": "icons/ivi@2x.png"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "strict_min_version": "48.0",
+      "id": "{8282c0bc-6292-4cc0-bf9e-8872b07db22a}"
+    }
+  }
+}
